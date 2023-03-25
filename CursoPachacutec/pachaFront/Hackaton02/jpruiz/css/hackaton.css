@@ -1,0 +1,343 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* secciones */
+
+.section-cabecera{
+    position: relative;
+    height: 525px;
+}
+
+.section-cabecera:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url(../media/background-Hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.section-bio{
+    background: #7299FE;
+}
+.section-skills{
+    background: #9122FF;
+}
+
+.section-portafolio{
+    background: #FFD233;
+}
+
+.section-clientes{
+    background: #3F4E62;
+}
+
+.section-contacto{
+    background: #1687A0;
+}
+
+.container{
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.container .content{
+    padding: 50px 0
+}
+
+.section-cabecera .container{
+    height: 100%;
+}
+
+.section-cabecera .container .content{
+    height: 100%;
+}
+
+.section-portafolio .container{
+    max-width: 970px;
+}
+
+
+.section-contacto .container{
+    max-width: 859px;
+}
+
+
+
+/* Style */
+
+.cabecera{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabecera h1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: white;
+    text-align: center;
+}
+
+.cabecera .presentacion{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    background: rgba(114, 153, 254, 0.5);
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;  
+}
+
+.biografia{
+   
+}
+.biografia .titulo-bio{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #1D06A7;
+    text-align: center;
+}
+
+.biografia .contenido-bio{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.biografia .boton-cv{
+    background: #D16FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    padding: 20px 60px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.skills{
+  
+}
+
+.skills .titulo-skill{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #26CC4B;
+    text-align: center;
+}
+
+
+.barras-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barras-cursos .columns{
+    width: 50%;
+}
+
+
+.barras-column-1 .barra {
+    margin-right: 35px ;
+}
+
+
+.barras-cursos .barra:not(:last-child) {
+    margin-bottom: 35px ;
+}
+
+.barras-cursos label{
+    color: white;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.barras-cursos progress{
+    width: 100%;
+    height: 20px;
+}
+
+
+.portafolio .title h1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #00AD84;
+    text-align: center;
+}
+
+
+.portafolio .grid-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portafolio .grid-image .image{
+    width: 25%;  
+}
+
+
+@media only screen and (max-width: 989px) {
+    .portafolio .grid-image .image{
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 25px; 
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .portafolio .grid-image{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+
+
+
+.clientes .title h1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #ADFF28;
+    text-align: center;
+}
+
+.clientes .grid-image-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 989px) {
+    .clientes .grid-image-logos{
+        display: flex;
+        flex-direction: column;
+    }  
+}
+
+.clientes .grid-image-logos .logos:not(:last-child){
+    margin-right: 25px;
+}
+
+@media only screen and (max-width: 989px) {
+    .clientes .grid-image-logos .logos:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+.contacto .title h1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #FF1B1B; 
+    text-align: center;
+}
+
+.contacto .boton-enviar{
+    background: #233451;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 167px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 50px;
+}
+
+.tabla tr{
+    display: flex;
+    flex-wrap: wrap;  
+    margin-bottom: 45px;
+}
+
+.tabla td{ 
+    width: 363px;
+    display: block;
+}
+
+.tabla td:not(:last-child){ 
+   margin-right: 20px;
+}
+
+@media only screen and (max-width: 989px) {
+    .tabla td:not(:last-child){ 
+        margin-right: 0px;
+     }
+}
+
+@media only screen and (max-width: 989px) {
+    .tabla td{ 
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 989px) {
+    .tabla tr{ 
+        margin-bottom: 15px;
+    }
+}
+
+.tabla th{ 
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+    height: 150px;
+}
+

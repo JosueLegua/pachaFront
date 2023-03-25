@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!--Versión de HTML-->
+<html lang="es"> <!--lenguaje-->
+
+<head> <!--encabezado-->
+    <meta charset="UTF-8"> <!--metadatos acepte caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--metadatos mas compatible para todas / contenido del Internet Explorer Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--metadatos La visualizacion sera horizontal/ ocupara toda la pantalla del dispositivo-->
+    <title>Carlos Martinez</title><!--Titulo-->
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body><!--Cuerpo-->
+    <header>
+        <h1>Titulo de la pagina</h1>
+        <nav>
+            <p>navegador</p>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <div style="background-color: blue; border: 6px outset red;">
+                <p style="color:white">Hola</p>
+            </div>
+            <div style="background-color: black;">
+                <p style="color: chartreuse;">Chau</p>
+            </div>
+        </aside>
+        <section>
+            <article>
+                <figure>
+                    <img src="avion.jpg" alt="avion ruso de 5ta generacion" height="300px">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <p>This is normal text - <b>and this is bold text</b>.</p>
+                    <br>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                        organization, WWF works in 100 countries and is supported by 1.2 million members in the United
+                        States and close to 5 million globally.
+                    </blockquote>
+                    <br>
+                    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+                    <br>
+                    <iframe src="https://www.x-codec.net" title="W3Schools Free Online Web Tutorials" width="600px"
+                        height="800px"></iframe>
+                    <br>
+                    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+                    <br>
+                    <label for="file">Downloading progress:</label>
+                    <progress id="file" value="32" max="100"> 32% </progress>
+                    <br>
+                    <label for="cars">Choose a car:</label>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes" selected>Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Month</th> <!--cabecera-->
+                            <th>Savings</th>
+                        </tr>
+                        <tr>
+                            <td>January</td><!--filas-->
+                            <td>$100</td>
+                        </tr>
+                        <td>Enero</td>
+                        <td>$200</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <video width="320" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+                    <br>
+                    <strong>This text is important!</strong>
+                    <br>
+                    <p>This is some normal text.</p>
+                    <p><small>This is some smaller text.</small></p>
+                    <br>
+                    <dialog open>This is an open dialog window</dialog>
+                    <br>
+                    <p>This text contains <sub>subscript</sub> text.</p>
+                    <br>
+                    <p>This text contains <sub>subscript</sub> text.</p>
+                    <br>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ul>
+                      <br>
+                      <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                      
+                      <ol start="50">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                    <br>  
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea
+                          <ul>
+                            <li>Black tea</li>
+                            <li>Green tea</li>
+                          </ul>
+                        </li>
+                        <li>Milk</li>
+                      </ol>
+                      <br>
+                      <table>
+                        <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th colspan="2">Phone</th>
+                        </tr>
+                        <tr>
+                          <td>John Doe</td>
+                          <td>john.doe@example.com</td>
+                          <td>123-45-678</td>
+                          <td>212-00-546</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <details>
+                        <summary>Epcot Center</summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                      </details>
+                </figure>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Carlos Martinez</a>.<br>
+            Visit us at:<br>
+            <a href="https://www.x-codec.net" target="_blank">x-codec.net</a><br>
+            Box 564, Disneyland<br>
+            <b>USA</b>
+        </address>
+    </footer>
+    <script>
+       alert("Hola desde el alert")
+    </script>
+</body>
+
+</html>

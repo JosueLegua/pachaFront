@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        input:valid{
+            background: green;
+        }
+        input:invalid{
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="misegundapagina.html" method="get">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="button" value="Este es un boton que no hace nada">
+        <br>
+        <label for="chk">Escoge de varias opciones</label>
+        <input type="checkbox" name="chk" id="chk">
+        <input type="checkbox" name="ch2" id="ch">
+
+        <br>
+        <label for="color">Escoge tu color</label>
+        <input type="color" name="color" id="">
+<br>
+<label for="fecha">Escoge la fecha: </label>
+<input type="date" name="fecha" id="">
+<br>
+<label for="fechaHora">Escribe tu hora y fecha</label>
+<input type="datetime-local" name="fechaHora" id="">
+<br>
+<label for="email">escribe tu email</label>
+<input type="email" name="email" id="">
+<br>
+<label for="archivo"></label>
+<input type="file" name="archivo" id="">
+
+<br>
+<label for="oculto">Oculto</label>
+<input type="hidden" name="oculto" value="EstoyOculto">
+<br>
+<label for="image">Debe ser una imagen</label>
+<input type="image" src="su57.jpg" alt="">
+
+        <br>
+<br>
+
+<label for="mes">Escoge el mes:</label>
+<input type="month" name="mes" id="">
+<br>
+<label for="numeros">Escoge solo numeros</label>
+<input type="number" name="numeros" id="" max="100" min="10">
+
+<br>
+<label for="op1">Opciones</label>
+<input type="radio" name="opciones" id="" value="CSS"><label for="opciones">CSS</label>
+<input type="radio" name="opciones" id="" value="HTML"><label for="opciones">HTML</label>
+<input type="radio" name="opciones" id="" value="JS"><label for="opciones">JS</label>
+<br>
+<label for="points">Points (between 0 and 10):</label>
+<input type="range" id="points" name="points" min="0" max="10">
+<br>
+<label for="buscar">Se Busca</label>
+<input type="search" name="buscar" id="">
+<br>
+<label for="telefono">Ingresa tu telefono</label>
+<input type="tel" name="telefono" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+<br>
+<label for="texto">Texto</label>
+<input type="text" name="texto" id="">
+<br>
+<label for="tiempo">Tiempo</label>
+<input type="time" name="tiempo" id="">
+<br>
+<label for="pagina">Paginas:</label>
+<input type="url" name="pagina" id="">
+<br>
+<label for="semana">Semanas</label>
+<input type="week" name="Semana" id="">
+<br>
+
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab" selected>Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+<br>
+
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<br>
+<label for="textarea">Area grande de texto</label>
+<textarea name="textarea" id="" cols="30" rows="10"></textarea>
+<br>
+<h2>Validaciones</h2>
+<label for="texto">Texto requerido</label>
+<input type="text" name="texto" id="" required minlength="5" maxlength="10" readonly>
+<br>
+
+<label for="conpattern">Escribe tu nombre de usuario</label>
+<input type="text" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+
+<br>
+<label for="tiposangre">Tipo de Sangre:</label>
+<input type="text" name="tiposangre" id="" pattern="(A|B|AB|O)[+-]">
+
+<input type="reset" value="Borrar">
+
+
+<input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

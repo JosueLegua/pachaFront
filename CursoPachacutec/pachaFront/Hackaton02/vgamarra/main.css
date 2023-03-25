@@ -1,0 +1,92 @@
+
+.colortitulo0{
+    color:#FFFFFF ;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+.color-bonito{
+    background-color: #7299FE ;
+}
+
+.colordeletra{
+    color:#F8F8F8 ;
+    font-size: 14px ;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.colortitulo{ 
+    color: #1D06A7;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+
+
+    
+}
+.color-fondo2{
+background-color: #9022FF;
+}
+.colortitulo2{
+    color: #26CC4B;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+}
+.color-fondo3{
+    background-color:#FFD233;
+}
+.colortitulo3{
+    color:#00AD84;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+}
+.color-fondo4{
+    background-color:#3F4E62 ;
+
+}
+.colortitulo4{
+    color:#ADFF28 ;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+}
+.color-fondo5{
+    background-color:#1687A0 ;
+
+}
+.colortitulo5{
+    color: #FF1B1B;
+    font-size: 36px ;
+    font-weight: 700;
+    line-height: 41.4px;
+    font-family: Arial;
+    text-align: center;
+}
+.imagen1{
+    background-image: url('imagen1.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.yosoy{ 
+    font-size: 36px ;
+    font-weight: 700;
+    font-family: Arial;
+    color:#FFFFFF ;
+}

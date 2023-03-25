@@ -1,0 +1,75 @@
+#intro{
+    position: absolute;
+    width: 1665.47px;
+    height: 1078.86px;
+    left: -357.23px;
+    top: -9.04px;
+    
+    
+    background: url(image\ 1.png);
+}
+
+
+#sobremi{
+position: absolute;
+width: 960px;
+height: 424px;
+left: 0px;
+top: 525px;
+
+background: #7299FE;
+}
+#Skills{
+    height: 424px;
+width: 960px;
+left: 0px;
+top: 525px;
+border-radius: 0px;
+
+    position: absolute;
+    width: 960px;
+    height: 424px;
+    left: 0px;
+    top: 949px;
+    
+    background: #9122FF;}
+    
+
+
+
+
+#Portafolio{
+    background: #FFD233;
+    position: absolute;
+    width: 960px;
+    height: 424px;
+    left: 0px;
+    top: 1373px;
+}
+
+#Clientes{
+    position: absolute;
+    width: 960px;
+    height: 258px;
+    left: -1px;
+    top: 1797px;
+    
+    background: #3F4E62;
+}
+
+
+
+
+
+
+
+#contact{
+   position: absolute;
+   width: 960px;
+   height: 578px;
+   left: 0px;
+   top: 2054px;
+
+background: #1687A0;
+
+}

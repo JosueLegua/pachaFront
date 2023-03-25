@@ -1,0 +1,84 @@
+/*
+Hoja de estilos para el index
+*/
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    font-family: fantasy;
+}
+
+#h2Especial{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkmagenta;
+}
+
+.classEspecial{
+    font-size: larger;
+    color: salmon;
+}
+
+.clsBoton{
+    color: blue;
+}
+
+.clsBoton[disabled]{
+    background-color: coral;
+}
+
+.clsSelEscalas>option[selected]{
+    font-family: 'Courier New', Courier, monospace;
+}
+.clsSelEscalas>option{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[value="3"]{
+    color: red;
+}
+
+input:focus{
+
+    border: 1px solid greenyellow;
+}
+
+li:first-child{
+    display: none;
+}
+
+
+option:first-child{
+    background-color: cyan;
+}
+
+p::first-letter{
+    font-size: 72px;
+}
+
+a:hover{
+    color: chartreuse;
+    text-decoration: underline;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul > li{
+    list-style: lower-alpha;
+}
+
+.clsFuente{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clsTamFuente{
+    font-size: larger;
+}
+
+.clsColorFondo{
+    background-color: blue;
+}

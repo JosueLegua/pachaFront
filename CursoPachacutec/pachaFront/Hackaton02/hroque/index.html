@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reto 4</title>
+	</head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		main {
+			display: flex;
+			justify-items: center;
+			flex-direction: column;
+			font-family: 'Arial';
+			font-style: normal;
+			font-weight: 400;
+		}
+		header {
+			height: 100vh;
+			background-image: url('https://s3-alpha-sig.figma.com/img/b276/e2df/1b62c76cc6d82701a90a25453576939b?Expires=1679875200&Signature=SY4CiJayFhxe5eFOuN7OoY9Mm-MYPP9smaWZRITSNbZNlpZp7UGdmqHHyqoEqug23-AdWu0mVpGGqh2NH1Qbw6s5rLy612v5ehaF3aNajCB7r6-BJwrHI6QmdudK5V59nz3v1~mhn0vpWFS-L0b1mxwrxphJm~y8VlidaJ~CxXmuFtjF~imeO6V5UGTkUX7SvE95AofB-pi7OyMawII02KPLPu20a~03UIhgD8A3XpZ4sx5dnvN3FryIElbH90-QWj-DVLCcA15PHIzD~d0b1PP9BTD13fTod~ZmQZzvts9AMZHkUcf5b1vphCBsW3724e-2kV78a~9VzlftzO~vRg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
+			position: relative;
+			background-position: center;
+		}
+		h1 {
+			position: absolute;
+			top: 378px;
+			left: 200px;
+			width: 30rem;
+			font-size: 3rem;
+			background: #729afe76;
+			color: #fff;
+			padding: 1rem;
+		}
+		section .container {
+			width: 960px;
+			margin: 0 auto;
+		}
+		.about {
+			background: #7299fe;
+			padding: 0 4rem 3rem;
+		}
+		.about .title {
+			text-align: center;
+			color: #1d06a7;
+			font-size: 2.2rem;
+		}
+		.about .description {
+			color: #fff;
+			line-height: 1.2rem;
+		}
+		.about .button {
+			background: #d16fff;
+			color: #fff;
+			width: 187px;
+			font-weight: bold;
+			font-size: 1.2rem;
+			padding: 1rem 0;
+			border-style: none;
+			border-radius: 15px;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			cursor: pointer;
+		}
+		.skills {
+			background: #9022ff;
+			padding: 0 4rem 2.5rem;
+		}
+		.skills .title {
+			text-align: center;
+			color: #26cc4b;
+			font-size: 2.2rem;
+		}
+		.skills .box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-items: center;
+		}
+		.skills div {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2.5rem;
+		}
+		.skills label {
+			color: #fff;
+			font-size: 1.2rem;
+			margin: 0 0 1rem 0;
+			text-transform: uppercase;
+		}
+		.skills progress {
+			width: 25rem;
+			height: 20px;
+			-webkit-appearance: none;
+		}
+		.skills progress::-webkit-progress-bar {
+			border-radius: 40px;
+			background-color: #fff;
+		}
+		.skills progress::-webkit-progress-value {
+			border-radius: 40px;
+			background-color: #57eff9;
+		}
+		.portfolio {
+			background-color: #ffd233;
+			padding: 0 4rem 3rem;
+		}
+		.portfolio .title {
+			text-align: center;
+			color: #00ad84;
+			font-size: 2.2rem;
+		}
+		.portfolio .box {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
+			justify-items: center;
+		}
+		.portfolio .box img {
+			width: 140px;
+			height: 92px;
+		}
+		.clientes {
+			background-color: #3f4e62;
+			padding: 0 4rem 3rem;
+		}
+		.clientes .title {
+			text-align: center;
+			color: #adff28;
+			font-size: 2.2rem;
+		}
+		.clientes .box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.contacto {
+			background-color: #1687a0;
+			padding: 0 4rem 3rem;
+		}
+		.contacto .title {
+			text-align: center;
+			color: #ff1b1b;
+			font-size: 2.2rem;
+		}
+		.contacto form {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			gap: 1.5rem;
+		}
+		.contacto form div {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1.2rem;
+		}
+		.contacto form div input {
+			font-family: 'Arial';
+			font-style: normal;
+			font-weight: 400;
+			width: 363px;
+			height: 39px;
+			padding-left: 1rem;
+			border: 1px solid #bfbfbf;
+		}
+		.contacto form textarea {
+			width: 768px;
+			font-family: 'Arial';
+			font-style: normal;
+			font-weight: 400;
+			padding: 1rem 0 0 1rem;
+			border: 1px solid #bfbfbf;
+			resize: none;
+		}
+		.contacto form button {
+			font-family: 'Arial';
+			font-style: normal;
+			font-weight: bold;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			color: #fff;
+			background-color: #233451;
+			width: 167px;
+			height: 56px;
+			border-style: none;
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<header>
+			<h1>Hola, mi nombre es Sebastian Yabiku</h1>
+		</header>
+		<main>
+			<section class="about">
+				<div class="container">
+					<h2 class="title">Sobre mi</h2>
+					<p class="description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis.
+						Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim
+						habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+						diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu,
+						malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida
+						arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim
+						habitasse malesuada lacus, euismod pharetra habitasse.
+					</p>
+					<button class="button">Ver CV</button>
+				</div>
+			</section>
+			<section class="skills">
+				<div class="container">
+					<h2 class="title">Mis Skills</h2>
+					<div class="box">
+						<div>
+							<label for="html">html </label>
+							<progress id="html" value="80" max="100"></progress>
+						</div>
+						<div>
+							<label for="css">css </label>
+							<progress id="css" value="16" max="100"></progress>
+						</div>
+						<div>
+							<label for="javascript">javascript </label>
+							<progress id="javascript" value="55" max="100"></progress>
+						</div>
+						<div>
+							<label for="css">vue </label>
+							<progress id="css" value="85" max="100"></progress>
+						</div>
+						<div>
+							<label for="flexbox">flexbox </label>
+							<progress id="flexbox" value="92" max="100"></progress>
+						</div>
+						<div>
+							<label for="css-grid">css grid </label>
+							<progress id="css-grid" value="39" max="100"></progress>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio">
+				<div class="container">
+					<h2 class="title">Portafolio</h2>
+					<div>
+						<div class="box">
+							<img src="./img/img1.png" alt="Imagen 1" />
+							<img src="./img/img2.png" alt="Imagen 2" />
+							<img src="./img/img3.png" alt="Imagen 3" />
+							<img src="./img/img4.png" alt="Imagen 4" />
+							<img src="./img/img5.png" alt="Imagen 5" />
+							<img src="./img/img6.png" alt="Imagen 6" />
+							<img src="./img/img7.png" alt="Imagen 7" />
+							<img src="./img/img8.png" alt="Imagen 8" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="clientes">
+				<div class="container">
+					<h2 class="title">Clientes</h2>
+					<div class="box">
+						<img src="./img/ferme.png" alt="Ferme logo" />
+						<img src="./img/dotmatics.png" alt="Dotmatics logo" />
+						<img src="./img/ferme.png" alt="Ferme logo" />
+						<img src="./img/alliance.png" alt="Alliance logo" />
+					</div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div>
+					<h2 class="title">Contacto</h2>
+					<form onsubmit="preventSubmit(event)">
+						<div>
+							<input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+							<input type="text" name="apellido" id="apellido" placeholder="Apellido" />
+							<input type="text" name="email" id="email" placeholder="Email" />
+							<input type="text" name="telefono" id="telefono" placeholder="Telefono" />
+						</div>
+						<textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
+	<script>
+		preventSubmit = (e) => {
+			e.preventDefault();
+			alert('Mensaje enviado.');
+		};
+	</script>
+</html>

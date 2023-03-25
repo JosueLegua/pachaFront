@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio Front-End</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>codiGO</h1>
+            <h2>Hola, mi nombre <br> es Sebastian Yabiku </h2>
+        </header>
+
+        <main>
+            <!---------- Profile Section ---------->
+            <section class="main__profile">
+                <h2>Sobre mi</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse.
+                </p>
+                <button>Ver CV</button>
+            </section>
+            <!---------- /Profile Section ---------->
+
+
+            <!---------- Skills Section ---------->
+            <section class="main__skills">
+                <h2>Mis Skills</h2>
+
+                <div class="main__skills--left">
+                    <label for="html">HTML:</label>
+                    <progress id="html" value="75" max="100"> 75% </progress>
+
+                    <label for="javascript">Javascript:</label>
+                    <progress id="javascript" value="50" max="100"> 50% </progress>
+
+                    <label for="flexbox">Flexbox:</label>
+                    <progress id="flexbox" value="90" max="100"> 90% </progress>
+                </div>
+
+                <div class="main__skills--right">
+                    <label for="css">CSS:</label>
+                    <progress id="css" value="20" max="100"> 20% </progress>
+
+                    <label for="vue">Vue:</label>
+                    <progress id="vue" value="80" max="100"> 80% </progress>
+
+                    <label for="cssgrid">CSS Grid:</label>
+                    <progress id="cssgrid" value="35" max="100"> 35% </progress>
+                </div>
+            </section>
+            <!---------- /Skills Section ---------->
+
+
+            <!---------- Portafolio Section ---------->
+            <section class="main__portfolio">
+                <h2>Portafolio</h2>
+
+                <ul>
+                    <li>
+                        <img src="./imgs/portafolio-1.jpg" alt="portafolio-1">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-2.jpg" alt="portafolio-2">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-3.jpg" alt="portafolio-3">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-4.jpg" alt="portafolio-4">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-5.jpg" alt="portafolio-5">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-6.jpg" alt="portafolio-6">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-7.jpg" alt="portafolio-7">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/portafolio-8.jpg" alt="portafolio-8">
+                    </li>
+                </ul>
+            </section>
+            <!---------- /Portafolio Section ---------->
+
+            
+            <!---------- Clients Section ---------->
+            <section class="main__client">
+                <h2>Clientes</h2>
+
+                <ul>
+                    <li>
+                        <img src="./imgs/ferme.jpg" alt="ferme">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/dotmatics.jpg" alt="dotmatics">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/ferme.jpg" alt="ferme">
+                    </li>
+
+                    <li>
+                        <img src="./imgs/alliance.jpg" alt="alliance">
+                    </li>
+                </ul>
+            </section>
+            <!---------- /Clients Section ---------->
+
+
+            <!---------- Contact Section ---------->
+            <section class="main__contact">
+                <h2>Contacto</h2>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input type="text" name="apelldio" id="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="correo" id="correo" placeholder="Email">
+                        <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
+                    </div>
+                    <textarea name="descripcion" id="descripcion" rows="5" placeholder="Descripción"></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </section>
+            <!---------- /Contact Section ---------->
+        </main>
+    </body>
+
+</html>

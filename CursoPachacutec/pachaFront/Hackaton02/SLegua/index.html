@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <style>
+
+        .Seccion1 
+        {position: absolute;
+         width: 377px;
+         eight: 117px;
+         left: 78px;
+         top: 262px;}
+
+        .titulo1 
+        {position: absolute;
+    width: 232px;
+    height: 74px;
+    left: 386px;
+    top: 53px;
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+    
+    
+    color: #ffffff;}
+    
+        .rectangulo1 
+        {position: absolute;
+    width: 365px;
+    height: 117px;
+    left: 78px;
+    top: 262px;
+            background: rgba(114, 153, 254, 0.5);
+    border-radius: 10px;}
+    
+    .parrafo1 {
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
+    
+    
+    color: #FFFFFF;}
+    
+    .figura 
+    {
+    position: absolute;
+    width: 960px;
+    height: 525px;
+    left: 0px;
+    top: 0px;
+    
+    background: url(image.png);
+    }
+    
+    .rectangulo2 
+    {
+        position: absolute;
+        width: 960px;
+         height: 424px;
+         left: 78px;
+        top: 262px;
+
+        background: #7299FE;
+    }
+
+    .Seccion2 
+    {
+        position: absolute;
+        width: 960px;
+        height: 424px;
+        left: 0px;
+        top: 525px;
+    }
+
+    .titulo2 
+    {
+        position: absolute;
+width: 155px;
+height: 41px;
+left: 408px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+
+color: #1D06A7;
+
+    }
+
+    .parrafo2 
+    {
+        position: absolute;
+        width: 867px;
+        height: 50px;
+        left: 50px;
+        top: 100px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+color: #F8F8F8;
+    }
+
+    .rectangulo3 
+    {
+        position: absolute;
+width: 187px;
+height: 62px;
+left: 38px;
+top: 300px;
+
+background: #D16FFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+    }
+
+    .parrafo3 
+    {
+        position: absolute;
+width: 71px;
+height: 25px;
+left: 60px;
+top: -2px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 25px;
+
+color: #f8f8f8;
+
+    }
+    .Seccion3 
+    {
+        position: absolute;
+width: 960px;
+height: 424px;
+left: 0px;
+top: 949px;
+
+    }
+    .rectangulo4
+    {
+        position: absolute;
+width: 960px;
+height: 424px;
+left: 78.5px;
+top: 262px;
+
+background: #9122FF;
+    }
+
+    .Seccion4 
+    {
+        position: absolute;
+width: 960px;
+height: 424px;
+left: 0px;
+top: 1373px;
+
+    }
+
+    .rectangulo5 
+    {
+        position: absolute;
+width: 960px;
+height: 424px;
+left: 78.5px;
+top: 1635px;
+background: #FFD233;
+    }
+
+    .Seccion5
+    {
+        position: absolute;
+width: 960px;
+height: 258px;
+left: -1px;
+top: 1797px;
+    }
+
+    .rectangulo6
+    {
+        position: absolute;
+width: 960px;
+height: 258px;
+left: 78.5px;
+top: 2058px;
+
+background: #3F4E62;
+    }
+
+.Seccion6 
+{
+    position: absolute;
+width: 960px;
+height: 578px;
+left: 0px;
+top: 2054px;
+}
+.rectangulo7
+{
+    position: absolute;
+width: 960px;
+height: 578px;
+left: 78.5px;
+top: 2315px;
+
+background: #1687A0;
+}
+
+.titulo3 
+{
+    position: absolute;
+width: 165px;
+height: 41px;
+left: 404px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+
+color: #26CC4B;
+}
+.titulo4
+{
+    position: absolute;
+width: 169px;
+height: 41px;
+left: 399px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+
+color: #00AD84;
+
+}
+.titulo5
+{
+    position: absolute;
+width: 141px;
+height: 41px;
+left: 413px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+
+color: #ADFF28;
+}
+.titulo6
+{
+    position: absolute;
+width: 157px;
+height: 41px;
+left: 406px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+
+color: #FF1B1B;
+}
+
+.opcion1 
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 183px;
+top: 130px;
+
+background: url(image.png);
+}
+.opcion2
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 334px;
+top: 130px;
+
+background: url(image.png);
+}
+.opcion3
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 486px;
+top: 130px;
+
+background: url(image.png);
+}
+.opcion4
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 641px;
+top: 130px;
+
+background: url(image.png);
+}
+.opcion5
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 182px;
+top: 240px;
+
+background: url(image.png);
+}
+.opcion6
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 335px;
+top: 240px;
+
+background: url(image.png);
+}
+.opcion7
+{
+    position: absolute;
+width: 142px;
+height: 92px;
+left: 486px;
+top: 240px;
+
+background: url(image.png);
+}
+.opcion8
+{
+    position: absolute;
+width: 140px;
+height: 92px;
+left: 641px;
+top: 240px;
+
+background: url(image.png);
+}
+.convenio1
+{
+    position: absolute;
+width: 178px;
+height: 69px;
+left: 69px;
+top: 100px;
+
+background: url(image.png);
+}
+.convenio2
+{
+    position: absolute;
+width: 202px;
+height: 54px;
+left: 270px;
+top: 110px;
+
+background: url(image.png);
+}
+.convenio3
+{
+    position: absolute;
+width: 178px;
+height: 67px;
+left: 496px;
+top: 100px;
+
+background: url(image.png);
+}
+.convenio4
+{
+    position: absolute;
+width: 194px;
+height: 67px;
+left: 700px;
+top: 100px;
+
+background: url(image.png);
+}
+.Cajadetexto1
+{
+    position: absolute;
+width: 363px;
+height: 59px;
+left: 100px;
+top: 110px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+}
+.Cajadetexto2
+{
+    position: absolute;
+width: 363px;
+height: 59px;
+left: 496px;
+top: 110px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+}
+.Cajadetexto3
+{
+    position: absolute;
+width: 363px;
+height: 59px;
+left: 100px;
+top: 210px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+}
+.Cajadetexto4
+{
+    position: absolute;
+width: 363px;
+height: 59px;
+left: 496px;
+top: 210px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+}
+.Cajadetexto5
+{
+    position: absolute;
+width: 759px;
+height: 112px;
+left: 100px;
+top: 310px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+}
+.Boton
+{
+    position: absolute;
+width: 167px;
+height: 56px;
+left: 396px;
+top: 470px;
+
+background: #233451;
+}
+.Entrada1
+{
+    position: absolute;
+width: 50px;
+height: 16px;
+left: 15px;
+top: 5px; 
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #7A7A7A;
+}
+.Entrada2
+{
+    position: absolute;
+width: 50px;
+height: 16px;
+left: 15px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #7A7A7A;
+}
+.Entrada3
+{
+    position: absolute;
+width: 36px;
+height: 16px;
+left: 15px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #7A7A7A;
+
+}
+.Entrada4
+{
+    position: absolute;
+width: 53px;
+height: 16px;
+left: 15px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #7A7A7A;
+}
+.Entrada5
+{
+    position: absolute;
+width: 74px;
+height: 16px;
+left: 15px;
+top: 5px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+
+color: #7A7A7A;
+
+}
+.Entrada6
+{
+    position: absolute;
+width: 69px;
+height: 21px;
+left: 55px;
+top: 0px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+    </style>
+
+</head>
+
+<body>
+    <section class="Seccion1">
+
+        <figure>
+            <img  class="figura" src="img/image 1.jpg" alt="persona" >
+        </figure>
+
+        <h1 class="titulo1">codiGO</h1>
+
+<div class="rectangulo1">
+
+    <h2 class="parrafo1">Hola, mi nombre es Sebatian Yabiku</h2>
+</div>
+
+
+    </section> 
+
+    <section class="Seccion2">
+        <div class="rectangulo2">
+            <h2 class="titulo2">Sobre mi</h2>
+            <p class="parrafo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse.</p>
+            <div class="rectangulo3">
+                <h3 class="parrafo3">Ver CV</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="Seccion3">
+        <div class="rectangulo4">
+         <h2 class="titulo3">Mis Skills</h2>
+         <div class="Completo1">
+            <div class="fragmento1"> </div>
+         </div>
+         <div class="Completo2">
+            <div class="fragmento2"> </div>
+         </div>
+         <div class="Completo3">
+            <div class="fragmento3"> </div>
+         </div>
+         <div class="Completo4">
+            <div class="fragmento4"> </div>
+         </div>
+         <div class="Completo5">
+            <div class="fragmento5"> </div>
+         </div>
+         <div class="Completo6">
+            <div class="fragmento6"> </div>
+         </div>
+        </div>
+        <h4 class="tipo1">HTML</h4>
+        <h4 class="tipo2">CSS</h4>
+        <h4 class="tipo3">JavaScript</h4>
+        <h4 class="tipo4">Vue</h4>
+        <h4 class="tipo5">FlexBox</h4>
+        <h4 class="tipo6">CSS Grid</h4>
+        <style>
+            .Completo1 
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 65px;
+top: 150px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .Completo2
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 500px;
+top: 150px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .Completo3
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 66px;
+top: 220px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .Completo4
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 501px;
+top: 220px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .Completo5
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 61px;
+top: 300px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .Completo6
+            {
+                position: absolute;
+width: 403px;
+height: 20px;
+left: 502px;
+top: 300px;
+
+background: #ffffff;
+border-radius: 10px;
+            }
+            .fragmento1 
+            {
+                position: absolute;
+width: 319px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .fragmento2
+            {
+                position: absolute;
+width: 64px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .fragmento3
+            {
+                position: absolute;
+width: 215px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .fragmento4
+            {
+                position: absolute;
+width: 339px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .fragmento5
+            {
+                position: absolute;
+width: 363px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .fragmento6
+            {
+                position: absolute;
+width: 185px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+background: #57EFF9;
+border-radius: 20px;
+            }
+            .tipo1 
+            {
+                position: absolute;
+width: 50px;
+height: 21px;
+left: 165px;
+top: 340px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #ffffff;
+            }
+            .tipo2
+            {
+                position: absolute;
+width: 38px;
+height: 21px;
+left: 600px;
+top: 348px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+            }
+            .tipo3
+            {
+                position: absolute;
+width: 82px;
+height: 21px;
+left: 164px;
+top: 430px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+            }
+            .tipo4 
+            {
+                position: absolute;
+width: 32px;
+height: 21px;
+left: 600px;
+top: 430px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #ffffff;
+
+            }
+            .tipo5
+            {
+                position: absolute;
+width: 64px;
+height: 21px;
+left: 164px;
+top: 500px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+            }
+            .tipo6
+            {
+                position: absolute;
+width: 77px;
+height: 21px;
+left: 600px;
+top: 500px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+            }
+        </style>
+    </section>
+
+    <section class="Seccion 4">
+<div class="rectangulo5">
+<h2 class="titulo4">Portafolio</h2>
+<figure>
+    <img  class="opcion1" src="img/image.jpg" alt="1" >
+    <img  class="opcion2" src="img/image (1).jpg" alt="2" >
+    <img  class="opcion3" src="img/image (2).jpg" alt="3" >
+    <img  class="opcion4" src="img/image (3).jpg" alt="4" >
+    <img  class="opcion5" src="img/image (4).jpg" alt="5" >
+    <img  class="opcion6" src="img/image (5).jpg" alt="6" >
+    <img  class="opcion7" src="img/image (6).jpg" alt="7" >
+    <img  class="opcion8" src="img/image (7).jpg" alt="8" >
+</figure>
+</div>
+    </section>
+
+    <section class="Seccion 5">
+<div class="rectangulo6">
+    <h2 class="titulo5">Clientes</h2>
+<figure>
+    <img  class="convenio1" src="img/image (8).jpg" alt="fi1" >
+    <img  class="convenio2" src="img/image (9).jpg" alt="fi2" >
+    <img  class="convenio3" src="img/image (10).jpg" alt="fi3" >
+    <img  class="convenio4" src="img/image (11).jpg" alt="fi4" >
+</figure>
+</div>
+    </section>
+
+    <section class="Seccion 6">
+<div class="rectangulo7">
+    <h2 class="titulo6">Contacto</h2>
+    <div class="Cajadetexto1">
+<h5 class="Entrada1">Nombre</h5>
+    </div>
+
+    <div class="Cajadetexto2">
+<h5 class="Entrada2">Apellido</h5>
+    </div>
+
+    <div class="Cajadetexto3">
+<h5 class="Entrada3">Email</h5>
+    </div>
+
+    <div class="Cajadetexto4">
+<h5 class="Entrada4">Telefono</h5>
+    </div>
+
+    <div class="Cajadetexto5">
+<h5 class="Entrada5">Descripcion</h5>
+    </div>
+
+    <div class="Boton">
+<h3 class="Entrada6">ENVIAR</h3>
+    </div>
+</div>
+    </section>
+</body>
+</html>

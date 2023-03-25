@@ -1,0 +1,147 @@
+<!-- La Etiqueta DOCTYPE le dice al naveagdor que se trata de un documento HTML 5 -->
+<!DOCTYPE html>
+<!-- la Etiqueta html con el atributo lang = "es" le dice al navegador el idioma de lña web-->
+<html lang="es">
+<!-- esta es la cabeza de web, todo lo que se pone aca no lo puede ver el usuario comun -->
+<head>
+    <!-- las etiquetas meta, son metadatos y algunos son el SEO para los buscadores -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la etiqueta link rel="shortcut icon", esto muestra el icono de la pagina-->
+    <link rel="shortcut icon" href="icono_ejemplo.png">
+    <!-- la etiqueta title es la unica visible del head para el usuario -->
+    <title>Etiquetas en HTML 5</title>
+</head>
+<!-- la etiqueta body es el cuerpo visible para los usuarios -->
+<body>
+    <!-- la etiqueta header es el encabezado de la pagina -->
+    <header>
+        <!-- la etiqueta nav, es la navegacion de la pagina, ejemplo .Home .Nuevo .Productos .Redes -->
+        <nav>
+            <!-- la etiquetas  ul son listas no ordenadas-->
+            <ul>
+                <!-- la etiqueta li son elementos del <ul> -->
+                <li>
+                    Home
+                </li>
+                <li>
+                    Productos
+                </li>
+                <li>
+                    Redes
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- la etiqueta aside reprensenta una seccion de la pagina que muestra contenido indirectamente relacionado-->
+    <aside>
+        <!-- las etiquetas h1, h2, h3 son titulos y subtitulos, se usan segun la herarquia de importancia -->        
+        <h3>Testimonios</h3>
+        <!-- la etiqueta blockquote  son citas en bloque-->
+        <blockquote>
+            <!-- la etiqueta <p> es un parrafo-->
+            <p>"Este producto ha cambiado mi vida."</p>
+            <!-- la etiqueta footer es el pie de pagina para el contenido de seccion mas cercano -->
+            <footer>John Doe</footer>
+        </blockquote>
+        <blockquote>
+            <p>"No podría estar más contento con mi compra."</p>
+            <footer>Jane Doe</footer>
+        </blockquote>
+    </aside>
+    <!-- la etiqueta section representa una seccion del documento, pienselo como un tema con sus subtemas -->
+    <section>
+        <!-- la etiqueta article reprensenta la composision de auto_contenida -->
+        <article>
+            <!-- la etiqueta div sirve para crear seccion o agrupar contenidos -->
+            <div>
+                <!-- la etiqueta img se usa para inscrustar imaganes -->
+                <img src="" alt=""> <!-- el atributo src, se ingresa la ubicacion de la imagen, la etiqueta alt se usa para poner un nombre si no se logra cargar la imagen -->
+                <div>
+                    Lorem ipsum dolor sit amet consectetur
+                    <!-- la etiqueta br es un salto de linea -->
+                    <br>
+                    adipisicing elit. Aliquid debitis autem commodi, eaque, voluptatibus eos nihil laboriosam animi cumque eligendi velit dignissimos praesentium harum,
+                    <!-- la etiqueta b hace negrita las letras -->
+                    <b>Parte Negrita</b>
+                    <!-- la etiqueta strong se usa para hacer enfasis en el texto -->
+                    <strong>parte muy Importante </strong>
+                </div>
+            </div>
+            <div>
+                <!-- la etiqueta span es un contenedor en linea, sirve para aplicar estilo al texto o agrupar elementos en línea. -->
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita ab, nihil veritatis in eius totam atque sed odit blanditiis dignissimos labore quae neque, cum quos libero dicta nostrum nemo!
+                </span>
+                <!-- la etiqeuta <a> se usa para redirigir a otra pagina -->
+                    <!-- el atributo href se usa para poner la pagina -->
+                    <!-- el atributo target se usa para abrir la pagina en otra pestaña -->
+                    <!-- el atributo rel = "noopener" no se establecerá la referencia window.opener, eliminando la capacidad de la página a la que se vinculó de redirigir la original -->
+                <a href="https://pana-miguel.github.io" target="_blank" rel="noopener">Leer mas ...</a> 
+            </div>
+            <div>
+                <!-- etiqueta video o audio incrusta video o audio local o de internet,el atributo controls muestra los controlos para ver el video -->
+                <video src="./recursos/Esta canción esta muy sad 😥😢😢  Yot Club - YKWIM (Sub Español) (Lyrics).mp4" controls width="800"></video>
+                <br>
+                <audio src="https://www.myinstants.com//media/sounds/y2mate_Ajp9shj.mp3" controls></audio>
+                <!-- la etiqueta hr crear un linea que sepera contenido -->
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium deserunt provident dolorem maiores, sed excepturi inventore est similique sequi reiciendis fugit eos ad eaque unde delectus aspernatur odit itaque fugiat.
+                </p>
+                <!-- etiqueta button es un boto que mayormente son funcionales con JS -->
+                <button type="button">Click ?</button>
+            </div>
+            <div>
+                <label for="file">Mi Progreso va:</label>
+                <br>
+                <progress id="file" value="32" max="100"> 32% </progress>
+                <br>
+                <iframe src="https://pana-miguel.github.io" title="mi pagina web"></iframe>
+                <br>
+                <!-- la etiqueta form es un formulario, este formulario tiene etiquetas input, el input es una entra de texto, contraseña, fecha etc-->
+                <form>
+                    <!--
+                        el atrivuto required se usa para decir que esta informacion es nesesaria
+                    -->
+                    <label for="nombre">Ingrese su Nombre :</label>
+                    <input type="text" id="nombre" required><br>
+                    <label for="apellido">Ingrese su apellido :</label>
+                    <input type="text" id="apellido" required><br>
+                    <label for="correo">Ingrese su correo :</label>
+                    <input type="email" id="correo" required><br>
+                    <label for="contraseña">Ingrese su contraseña : </label>
+                    <input type="password" id="contraseña" required><br>
+                    <label for="cell">Escriba su numero de cell : </label>
+                    <!-- 
+                        el atrivuto value es para mostrar algo en el input
+                    -->
+                    <input type="number" id="cell" required value="892922"><br>
+                    <label for="color">Ecoja su color favorito : </label>
+                    <input type="color" id="color" ><br>
+                    <label for="rango_numero">eliga una numero de :
+                        1 <input type="range" min="1" max="20" id="rango_numero"> 20
+                    </label>
+                    <br>
+                    <label for="dia">Eliga un dia :</label>
+                    <input type="date" id="dia"><br>
+                    <label for="hora">Eliga la hora :</label>
+                    <input type="time" id="hora"><br>
+                    <label for="fecha">Escriba la fecha y hora : </label>
+                    <input type="datetime-local" id="fecha"><br>
+                    <label for="mensaje1">Escriba aqui su peticion : </label>
+                    <!-- cols y rows son para dar medidas al textarea -->
+                    <textarea cols="30" rows="7" required id="mensaje1">Escriba aqui su texto . . . </textarea><br>
+                    <label for="mensaje2">Comunicado para ustd :</label>
+                    <textarea readonly cols="30" rows="7"id="mensaje2">Esto es un textarea no modificable </textarea><br>
+                    <!-- a continuacion se ve un boton : -->
+                    <input type="button" value="Esto es un boton">
+                    <br><br>
+                    <input type="submit" value="Mandar formulario">
+                </form>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

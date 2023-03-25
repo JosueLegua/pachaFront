@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    margin: 30px auto 0;
+    width: 40%;
+    background-color: #EBF5FB ;
+
+}
+header p{
+    padding-bottom: 15px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+header h1{
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+main{
+    margin: 0 auto;
+    width: 40%;
+    background-color: #EBF5FB ;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+
+.button{
+    color: white;
+    font-weight: 700;
+    margin: 15px auto 0;
+    width: 200px;
+    height: 30px;
+    background-color: brown;
+    border: 2px solid crimson;
+    border-radius: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:#F5B7B1 ;
+}
+
+.reset{
+    background-color: #9B59B6;
+    border: 2px solid #7D3C98;
+
+}
+
+.reset:hover{
+    background-color: #C39BD3  ;
+}
+
+#nombres:valid{
+    border: 3px solid green;
+}
+
+#apellidos:valid{
+    border: 3px solid green;
+}
+
+#edad:valid{
+    border: 3px solid green;
+}
+
+#email:valid{
+    border: 3px solid green;
+}
+
+#nombres:invalid {
+    border: 3px solid red;
+}
+
+#apellidos:invalid {
+    border: 3px solid red;
+}
+
+#edad:invalid {
+    border: 3px solid red;
+}
+
+#email:invalid {
+    border: 3px solid red;
+}

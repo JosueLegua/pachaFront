@@ -1,0 +1,306 @@
+/*Generales*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*Seccion 1 Presentación*/
+
+.seccion1{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.seccion1__img{
+    width: 100%;
+    height: 525px;
+    background-image: url(./assets/foto.png);
+    background-position: top;
+    padding-top: 53px;
+}
+.seccion1__img h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    line-height: 73.59px;
+    text-align: center;
+}
+
+.seccion1__img h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    width: 365px;
+    height: 117px;
+    padding-top: 16px;
+    padding-left: 16px;
+    background-color: rgb(114 153 254 / 0.5);
+    margin-left: 78px;
+    margin-top: 135px; 
+}
+.seccion1__info{
+    width: 100%;
+    height: 424px;
+    background-color: #7299FE;
+    padding: 27px 47px 76px 41px;
+}
+
+.seccion1__info h1{
+    color: #1D06A7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 29px;
+    line-height: 41.4px;
+    text-align: center;
+}
+
+.seccion1__info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F8F8F8;
+}
+
+.seccion1__info button{
+    background-color: #D16FFF;
+    width: 187px;
+    height: 62px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.3px;
+    border: 0;
+    margin-top: 23px;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0  / 0.25);
+}
+
+/*Seccion 2 Skills*/
+
+.seccion2{
+    width: 100%;
+    min-width: 320px;
+    height: 424px;
+    background-color: #9022FF;
+    padding: 31px 57px 90px 64px;
+}
+
+.seccion2 h1{
+    margin-bottom: 22px;
+    color: #26CC4B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.4px;
+    text-align: center;
+}
+.seccion2__skills{
+    display: grid;
+    grid-template-columns: repeat(2, 403px);
+    grid-template-rows: repeat(6, 21px);
+    grid-template-areas: 
+    "html css"
+    "puntaje1 puntaje2"
+    "javascript vue"
+    "puntaje3 puntaje4"
+    "flexbox cssgrid"
+    "puntaje5 puntaje6"
+    ;
+    row-gap: 26px;
+    column-gap: 31px;
+}
+
+.seccion2__skills label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.7px;
+}
+
+.seccion2__skills progress{
+    width: 403px;
+    height: 31px;
+}
+
+.skill1{
+    grid-area: html;
+}
+#html{
+    grid-area: puntaje1;
+}
+.skill2{
+    grid-area: css;
+}
+#css{
+    grid-area: puntaje2;
+}
+.skill3{
+    grid-area: javascript;
+}
+#javascript{
+    grid-area: puntaje3;
+}
+.skill4{
+    grid-area: vue;
+}
+#vue{
+    grid-area: puntaje4;
+}
+.skill5{
+    grid-area: flexbox;
+}
+#flexbox{
+    grid-area: puntaje5;
+}
+.skill6{
+    grid-area: cssgrid;
+}
+#cssgrid{
+    grid-area: puntaje6;
+}
+
+/*Seccion 3 Portafolio*/
+
+.seccion3{
+    width: 100%;
+    min-width: 320px;
+    height: 424px;
+    background-color: #FFD233    ;
+    padding: 42px 159px 87px 162px;
+}
+
+.seccion3 figure{
+    width: 100%;
+}
+.seccion3 figure img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.seccion3 h1{
+    text-align: center;
+    color: #00AD84;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.4px;
+    padding-bottom: 42px;
+}
+
+/*Seccion 4 Clientes*/
+
+.seccion4{
+    width: 100%;
+    min-width: 320px;
+    height: 258px;
+    background-color: #3F4E62 ;
+    padding: 26px 65px 98px 70px;
+}
+
+.seccion4 figure{
+    width: 100%;
+}
+.seccion4 figure img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.seccion4 h1{
+    text-align: center;
+    color: #ADFF28;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.4px;
+    padding-bottom: 15px;
+}
+
+/*Seccion 5 Formulario*/
+
+.seccion5{
+    width: 100%;
+    min-width: 320px;
+    height: 578px;
+    background-color: #1687A0;
+    padding: 31px 101px 93px 100px;
+}
+
+.seccion5 h1{
+    text-align: center;
+    color: #FF1B1B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41.4px;
+    padding-bottom: 30px;
+}
+
+.seccion5 form{
+    display: grid;
+    grid-template-columns: repeat(2, 363px);
+    grid-template-rows: repeat(5, 59px);
+    grid-template-areas: 
+    "nombre ape"
+    "email telef"
+    "desc desc"
+    "desc desc"
+    "boton boton";
+    row-gap: 33px;
+    column-gap: 33px;
+}
+
+.item1{
+    grid-area: nombre;
+}
+.item2{
+    grid-area: ape;
+}
+.item3{
+    grid-area: email;
+}
+.item4{
+    grid-area: telef;
+}
+.item5{
+    grid-area: desc;
+    padding-bottom: 110px;
+}
+.item6{
+    grid-area: boton;
+    background-color: #233451;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700; 
+    color: white;
+    width: 167px;
+    height: 56px;
+    place-self: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0;
+}
+
+.item1, .item2, .item3, .item4, .item5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400; 
+    border-radius: 10px;
+    border: 0;
+}
+
+.item{
+    padding-left: 9px;
+}

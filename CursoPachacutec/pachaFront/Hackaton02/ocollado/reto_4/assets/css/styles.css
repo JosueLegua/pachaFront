@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 20px 20px 20px 20px !important;
+  text-align: center;
+}
+
+/*h1 {
+  font-weight: bold !important;
+}*/
+
+p {
+  font-size: 20px;
+  margin: auto !important;
+  padding: 20px 20px 20px 20px !important;
+}
+
+button {
+  background-color: blue !important;
+  margin: 20px !important;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.header-background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-image: url(../img/header/header-background.jpg);
+  height: 500px;
+  position: relative !important;
+}
+
+.form-control {
+  border-radius: 0rem !important;
+  -webkit-border-radius: 0rem !important;
+  -moz-border-radius: 0rem !important;
+  -ms-border-radius: 0rem !important;
+  -o-border-radius: 0rem !important;
+}
+
+.image-resize-portafolio {
+  width: 100%;
+  height: 80%;
+}
+
+.image-resize-clientes {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  width: 70%;
+  height: 80%;
+}
+
+.progress {
+  height: 20px !important;
+  background-color: white !important;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
+
+.progress-bar {
+  border-radius: 20px !important;
+  background-color: #69dbf5 !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+}
+
+.aside-aboutme {
+  background-color: #7299FE;
+}
+
+.section-knowledge {
+  background-color: #9122FF;
+}
+
+.section-portfolio {
+  background-color: #FFD233;
+}
+
+.section-clients {
+  background-color: #3F4E62;
+}
+
+.section-contact {
+  background-color: #1687A0;
+}
+
+.text-header-description {
+  color: #fff;
+  background-color: rgba(114, 153, 254, 0.5);
+  border-radius: 10px;
+}
+
+.white-color-text {
+  color: #fff;
+}
+
+/*CSS HEADER*/
+.title-header {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+
+  color: #FFFFFF !important;
+}
+
+.description-header {
+  width: 380px;
+  height: 117px;
+  font-family: 'Arial';
+  font-weight: 700;
+  font-size: 36px;
+  background-color: rgba(114, 153, 254, 0.5);
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+/*FIN CSS HEADER*/
+
+/*CSS ABOUTME*/
+.title-aboutme {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #1D06A7;
+}
+
+.description-aboutme {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+
+  color: #F8F8F8 !important;
+}
+
+.button-vercv-aboutme {
+  width: 187px;
+  height: 62px;
+  background: #D16FFF !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 20px !important;
+
+  font-family: 'Arial' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 22px !important;
+  line-height: 25px !important;
+}
+
+/*FIN CSS ABOUTME*/
+
+/*CSS MIS SKILLS*/
+
+.text-skill {
+
+  padding-left: 0% !important;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.title-skills {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #26CC4B;
+}
+
+/*FIN CSS MIS SKILLS*/
+
+/*CSS PORTAFOLIO*/
+
+.title-portfolio {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #00AD84
+}
+
+/*FIN CSS PORTAFOLIO*/
+
+/*CSS CLIENTES*/
+
+.title-clients {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #ADFF28;
+}
+
+/*FIN CSS CLIENTES*/
+
+/*CSS CONTACTO*/
+
+.title-contact {
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+
+  color: #FF1B1B;
+}
+
+.input-text-contact {
+
+  /*width: 363px !important;*/
+  height: 59px !important;
+
+  background: #FFFFFF !important;
+  border: 1px solid #BFBFBF !important;
+}
+
+.input-textarea-contact {
+
+  /*width: 363px !important;*/
+  height: 112px !important;
+
+  background: #FFFFFF !important;
+  border: 1px solid #BFBFBF !important;
+}
+
+.button-enviar-contact {
+  width: 167px;
+  height: 56px;
+  background: #233451 !important;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+/*FIN CSS CONTACTO*/

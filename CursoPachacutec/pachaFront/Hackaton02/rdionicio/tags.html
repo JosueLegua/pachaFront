@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td{
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <!-- Solo existe de h1  a h6 y sirven como titulo-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h6>Canchito feliz</h6>
+    
+    <!-- p etiqueta para parrafo-->
+    <p>Canchito feliz esta muy feliz.</p>
+    <p>Canchito triste esta muy triste</p>
+    
+    <!-- hr etiqueta para dividir con una linea -->
+    <hr>
+
+    <h2>Canchito felipe</h2>
+
+    <!--la etiqueta SPAN es para agregar resaltar, y para diferenciar se usa CSS-->
+    <!--la etiqueta BR es para pasar de linea para un texto largo-->
+    <p>
+        Este texto es <span style="color:crimson">mucho mas largo</span> y es para mostrar<br> 
+        la etiqueta de spam
+    </p>
+
+    <!--la etiqueta A incluido (target = "_blank" , es para ir a otra pestaña" y href="", es la direccion de la pagina donde se quiere ir-->
+    <a target="_blank" href="https://www.youtube.com/watch?v=MJkdaVFHrto">Learn HTML With HolaMundo</a><br>
+
+    <img src="Img/logoPython.png" height="400" />
+
+    <!--Dentro de type puede ir text, email, password, radio, checkbox, file-->
+    <form action="/formulario" method="POST">
+        <!--
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido" />
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows ="10" id="comentario" name="comentario" placeholder="Ingrese Comentario"></textarea>
+        <br>
+        <input type="submit" />
+        -->
+
+        <!--Por defecto, solo reemplazamos por value el type-->
+        <label for="nombre">Nombre</label>
+        <input value="Cesar Alonso" id="nombre" name="nombre" placeholder="Ingrese Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="Dionicio Achachagua" id="apellido" name="apellido" placeholder="Ingrese Apellido" />
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows ="10" id="comentario" name="comentario" placeholder="Ingrese Comentario">Este es un valor por defecto</textarea>
+        <br>
+        <!--el tipo puede ser button, rest, submit-->
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value = "50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <!--"list-style-type: _____ (pulsar control + space, para ver mas opciones)"-->
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--<table style="border: 1px solid black;">-->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Poducto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>GRATIS</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19,90 $</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>19,90 $</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total 49.80 $</td>
+        </tfoot>
+    </table>
+
+</body>
+</html>

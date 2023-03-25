@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="SegundaPagina" method="post">
+        <h1>Formulario 01</h1>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"minlength="1" maxlength="10">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" minlength="1" maxlength="10">
+        <br>
+        <br>
+        <br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" minlength="8" maxlength="14" pattern="^(?=.*\d)(?=.*[az])(?=.*[AZ])(?!.*\s).*$"> 
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="" pattern="\d{3}[\-]\d{3}[\-]\d{3}" maxlength="9">
+
+        <br><br><br>
+
+        <p>Procedemos con el siguiente birndacion de informacion de la pagina espero sea de su agrado, gracias</p>
+
+        <label for="Seleccion" >Selecciona el tipo de informacion: </label>
+        <select name="Seleccion" id="Seleccion">
+            <option value="volvo" selected>Basica</option>
+            <option value="saab">Regular</option>
+            <option value="opel">Extensa</option>
+            <option value="audi">Abundante</option>
+        </select>
+
+        <p><label for="w3review">Acepta lo declarado: </label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50" readonly>At abc.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+  <br> <br>
+
+  <label for="check">Acepto lo acordado: </label>
+  <input type="checkbox" name="check1" id="check1" required>
+   <br><br>
+   <label for="navegadores"><strong>Que navegador usas:</strong></label>
+  <input list="navegador" name="navegadores" id="navegadores">
+  <datalist id="navegador">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist><br><br>
+  <label for="color">Elige tu color: </label> 
+  <input type="color" name="color" id="color"><br><br>
+  <label for="correo">Correo Electronico: </label>
+  <input type="email" name="correro" id="correo">
+  <label for="fecha">Seleccione la fecha: </label>
+  <input type="date" name="fecha" id="fecha"><br><br>
+  <label for="Preferencias">Lenguajes que hablas: </label>
+  <input type="radio" name="leguaje" id="" value="Ingles"> <label for="lenguaje">Ingles</label>
+  <input type="radio" name="lenguaje" id="" value="Español"><label for="lenguaje">Español</label>
+  <input type="radio" name="leguaje" id="" value="Frances"><label for="lenguaje">Frances</label><br><br>
+
+<label for="points">Seleccione segun su conveniencia: </label>
+<input type="range" name="points" id="points" min="0" max="10">
+<br><br>
+<input type="submit" value="Enviar"><input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

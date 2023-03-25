@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Martinez Chempen</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Etiquetas o Referencias HTML</h1>
+        <nav>
+            <p>Navegador</p>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <div style="background-color: blue; border: 6px outset red;">
+                <p style="color:white">Hola</p>
+            </div>
+            <div style="background-color: black;">
+                <p style="color: chartreuse;">Chau</p>
+            </div>
+        </aside>
+        <section>
+            <article>
+                <figure>
+                    <img src="paisaje.jpg" alt="avion ruso de 5ta generacion" height="300px">
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <audio controls>
+                        <source src="horse.ogg" type="audio/ogg">
+                        <source src="mario_bros.mp3" type="audio/mpeg">
+                        Esto es un audio de la pagina web.
+                    </audio>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <p>Esto es un texto normal- <b> y un texto con negrita</b>.</p>
+                    <br>
+                    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                        Durante 50 años, WWF ha estado protegiendo el futuro de la naturaleza. La conservación líder mundial
+                        WWF trabaja en 100 países y cuenta con el apoyo de 1,2 millones de miembros en los Estados Unidos.
+                        Estados y cerca de 5 millones a nivel mundial. (Usando blockquote)
+                    </blockquote>
+                    <br>
+                    <p>La HTML <code> botones</code> etiquetas definidas al hacer click.</p>
+                    <br>
+                    <iframe src="https://www.petenottage.co.uk/" title="W3Schools Free Online Web Tutorials" width="600px"
+                        height="800px"></iframe>
+                    <br>
+                    <p>Mi color favorito es <ins>negro y blanco</ins>! no me gusta el <del>morado</del></p>
+                    <br>
+                    <label for="file">Descarga en progreso:</label>
+                    <progress id="file" value="32" max="100"> 32% </progress>
+                    <br>
+                    <label for="cars">Marcas de carro:</label>
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes" selected>Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br>
+                    <table>
+                        <tr>
+                            <th>Meses</th> 
+                            <th>Costo</th>
+                        </tr>
+                        <tr>
+                            <td>Enero</td>
+                            <td>S/. 100</td>
+                        </tr>
+                        <td>Febrero</td>
+                        <td>S/. 200</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <video width="900" controls>
+                        <source src="cordero.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Tu navegador soporta este video.
+                    </video>
+                    <br>
+                    <p>Mi madre tiene ojos color <span style="color:blue">marron</span>.</p>
+                    <br>
+                    <strong>Este texto es importante!</strong>
+                    <br>
+                    <p>Esto es un texto normal.</p>
+                    <p><small>Esto es un texto pequeño.</small></p>
+                    <br>
+                    <dialog open>Esto es una ventana de dialogo abierta</dialog>
+                    <br>
+                    <p>Este texto contiene <sub>subscript</sub> .</p>
+                    <br>
+                    <p>Este texto contiene <sub>subscript</sub> .</p>
+                    <br>
+                    <ul>
+                        <li>Cafe</li>
+                        <li>Te</li>
+                        <li>leche</li>
+                      </ul>
+                      <br>
+                      <ol>
+                        <li>Cafe</li>
+                        <li>Te</li>
+                        <li>leche</li>
+                      </ol>
+                      
+                      <ol start="50">
+                        <li>Cafe</li>
+                        <li>Te</li>
+                        <li>Leche</li>
+                      </ol>
+                    <br>  
+                    <ol>
+                        <li>Cafe</li>
+                        <li>Te
+                          <ul>
+                            <li>Te negro</li>
+                            <li>Te verde</li>
+                          </ul>
+                        </li>
+                        <li>Leche</li>
+                      </ol>
+                      <br>
+                      <table>
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Correo</th>
+                          <th colspan="2">Celular</th>
+                        </tr>
+                        <tr>
+                          <td>Carlos Martinez</td>
+                          <td>carlos.martinez@example.com</td>
+                          <td>123-45-678</td>
+                          <td>212-00-546</td>
+                        </tr>
+                      </table>
+                      <br>
+                      <details>
+                        <summary>Epcot Center</summary>
+                        <p>Epcot es un centro de atracciones de Disney Word</p>
+                      </details>
+                </figure>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Carlos Martinez</a>.<br>
+            Visit us at:<br>
+            <a href="https://www.petenottage.co.uk/" target="_blank">www.petenottage.co.uk</a><br>
+            Huiracocha 108, Callao<br>
+            <b>PERÚ</b>
+        </address>
+    </footer>
+    <script>
+       alert("Bienvenido a las Etiquetas HTML")
+    </script>
+</body>
+
+</html>

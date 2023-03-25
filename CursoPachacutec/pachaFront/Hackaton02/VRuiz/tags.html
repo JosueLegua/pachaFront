@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+</head>
+<body>
+
+    RAIZ DIRECTORA
+     tag html: <html></html><!--Raiz de un documento--->
+
+     METADATOS DEL DOCUMENTO
+     tag base: <base href=""> <!---URL base para resolver URLs relativos---->
+     tag head: <head></head> <!---Proporciona informacion general (metadatos)--->
+     tag title: <title>Titulo</title> <!--Titulo del documento-->
+     tag link: <link rel="stylesheet" href="url"> <!--Especifica la relacion entre el doc actual y un recurso externo-->
+     tag meta: <meta + atributos> <!--Variable para el documento-->
+     tag style: <style + atributo></style> <!--Indica informacion del estilo-->
+
+     SECCIONAMIENTO BASICO
+     tag body: <body></body> <!--Contenido del documento-->
+
+     SECCIONAMIENTO DEL CONTENIDO
+     tag article: <article + atributo> atributo</article> <!--Composicion autocontenida en un doc-->
+     tag section: <section>Elementos o atributos</section> <!--Define una seccion-->
+     tag nav: <nav>Elementos o atributos</nav> <!--Seccion de navegacion-->
+     tag aside: <aside></aside> <!--Contenido solo ligeramente relacionado-->
+     tag h1: <h1>Texto</h1> <!--Encabezado nivel 1-->
+     tag h2: <h2>texto</h2> <!--Encabezado nivel 2-->
+     tag h3: <h3>Texto</h3> <!--Encabezado nivel 3-->
+     tag h4: <h4>Texto</h4> <!--Encabezado nivel 4-->
+     tag h5: <h5>Texto</h5> <!--Encabezado nivel 5-->
+     tag h6: <h6>Texto</h6> <!--Encabezado nivel 6-->
+     tag hgroup: <hgroup>Elementos</hgroup> <!--Agrupa encabezados consecutivos-->
+     tag main: <main>Elementos</main> <!--Contenido principal de un doc-->
+     tag header: <head>Elementos</head> <!--Encabezado de una seccion-->
+     tag footer: <footer>Atributos</footer> <!--Pie de una seccion-->
+     tag address: <address> Atributos</address> <!--Aporta info de contacto-->
+
+     AGRUPACION DE CONTENIDO
+     tag p: <p>Texto</p> <!--Parrafo-->
+     tag hr: <hr> <!--separacion de contenido-->
+     tag pre: <pre>Texto</pre> <!--Bloque de texto preformateado-->
+     tag blockquote: <blockquote>Cita</blockquote> <!--Cita en forma de bloque-->
+     tag ol: <ol>Lista</ol> <!--Lista ordenada-->
+     tag ul: <ul>Lista</ul> <!--Lista desordenada-->
+     tag menu: <menu>Elementos</menu> <!--Inserta una barra de menu-->
+     tag li: <li>Texto</li> <!--Item de texto-->
+     tag dl: <dl>Texto</dl> <!--Lista de descripciones-->
+     tag dt: <dt>Texto</dt> <!--Termino en una lista de descripciones-->
+     tag dd: <dd>Texto</dd> <!--Descripcion en una lista de descripciones-->
+     tag figure: <figure + atributo> elemeto</figure> <!--Informacion autocontenida-->
+     tag figcaption: <figcaption>Texto</figcaption> <!--Titulo para una figura-->
+    
+     SEMANTICA DE TEXTO
+     tag a: <a href=""></a> <!--Hypervinculo-->
+     tag em: <em>texto</em> <!--Texto con enfasis-->
+     tag strong: <strong>Texto</strong> <!--Texto con enfasis fuerte (negrita)-->
+     tag small: <small>Text</small> <!--Comentario secundario-->
+     tag cite: <cite>Texto</cite> <!--Cita o referencia-->
+     tag q: <q>Texto</q> <!--Cita en forma de linea-->
+     tag dfn: <dfn + atributo></dfn> <!--Termino definitivo en el texto circundante-->
+     tag abbr: <abbr title="texto"></abbr> <!--Termino abreviado-->
+     tag time: <time>Texto</time> <!--fecha y/u hora-->
+     tag code: <code>codigo</code> <!--codigo de computadora-->
+     tag var: <var></var> <!--Instancia de una variable-->
+     tag kbd: <kbd>Texto</kbd> <!--Texto ingresado por el usuario-->
+     tag sub: <sub>Texto</sub> <!--Texto en subindice-->
+     tag sup: <sup>Texto</sup> <!--Texto en superindice-->
+     tag span: <span>Texto</span> <!--Contenedor generico para las lineas de texto-->
+     tag br: <br> <!--Quiebre de linea-->
+
+     CONTENIDO INCRUSTADO
+     tag picture: <picture></picture> <!--Imagen con multiples origenes-->
+     tag source: <source> <!--Recursos de medios alternativos-->
+     tag img: <img src="" alt=""> <!--imagen-->
+     tag video: <video src=""></video> <!--video-->
+     tag audio: <audio src=""></audio> <!--audio-->
+     tag track: <track></track> <!--Pista de texto para videos-->
+     tag map: <map name=""></map> <!--Mapa de imagen-->
+     tag area: <area shape="" coords="" href="" alt=""> <!--Sector en un mapa de imagen-->
+
+     INFORMACION TABULADA
+     tag table: <table></table> <!--tabla-->
+     tag caption: <caption>Texto</caption> <!--El titulo de una tabla-->
+     tag colgroup: <colgroup></colgroup> <!--Grupo de columnas-->
+     tag col: <col> <!--Establece atributos para columnas-->
+     tag tbody: <tbody></tbody> <!--Cuerpo de la tabla-->
+     tag thead: <thead></thead> <!--Encabezado de la tabla-->
+     tag tfoot: <tfoot></tfoot> <!--Pie de la pagina-->
+     tag tr: <tr></tr> <!--fila-->
+     tag td: <td></td> <!--Celda comun-->
+     tag th: <th></th> <!--Celda de encabezado-->
+     
+     FORMULARIOS
+     tag form: <form action=""></form> <!--Formulario-->
+     tag label: <label for=""></label> <!--Etiqueta de un control-->
+     tag input: <input type="text"> <!--Control de entrada-->
+     tag button: <button></button> <!--Boton-->
+     tag select: <select name="" id=""></select> <!--Lista de opciones-->
+     tag datalist: <datalist></datalist> <!--sugerencia para los controles-->
+     tag option: <option value=""></option> <!--Una opcion en una lista-->
+     tag textarea: <textarea name="" id="" cols="30" rows="10"></textarea> <!--Campo ce texto multilinea-->
+     tag output: <output></output> <!--La salida de un poceso-->
+     tag progress: <progress></progress> <!--Progreso de una tarea-->
+     tag legend: <legend></legend> <!--Titulo de un grupo de controles-->
+     
+     ELEMENTOS INTERACTIVOS
+     tag details: <details></details> <!--Contenido desplegable-->
+     tag summary: <summary></summary> <!--Un resumen del contenido desplegable-->
+     tag dialog: <dialog></dialog> <!--Cuadro de dialogos-->
+     
+     PROGRAMAS
+     tag script: <script></script> <!--Incrusta programas-->
+     tag noscript: <noscript></noscript> <!--Contenido alternativo para programas-->
+     tag template: <template></template> <!-- Plantilla para contenido a ser agregado-->
+     tag slot: <slot></slot> <!--Espacio en componentes para insertar contenido-->
+     tag canvas: <canvas></canvas> <!--Contenedor para graficos dinamicos-->
+
+</body>
+</html>

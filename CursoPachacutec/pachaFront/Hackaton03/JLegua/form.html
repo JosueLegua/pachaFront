@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="Recepción" method="post">
+        <h1><strong>Formulario-Reto 03</strong></h1> 
+        <label for="nombre">Nombre: </label>
+        <input class="input-text" type="text" name="nombre" id="nombre" pattern="^[A-Za-z0-9_]{1,15}$" >
+        <label for="apellido">Apellido:  </label>
+        <input class="input-text" type="text" name="apellido" id="apellido" pattern="^[A-Za-z0_]{1,15}$" > <br><br>
+        <label for="edad">Edad:  </label>
+        <input class="input-text" type="number" name="edad" id="edad" min="18" max="80" >
+        <label for="sexo">Sexo:  </label>
+        <input class="input-text" type="text" name="sexo" pattern="(M|F)|(m|f)" id="sexo" ><br><br>
+        <label for="dni">DNI:  </label>
+        <input class="input-text" type="text" name="dni" id="dni" minlength="8" maxlength="8" >
+        <label for="email">Correo:  </label>
+        <input class="input-text" type="email" name="email" id="email" >
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación Formulario</title>
+</head>
+<body>
+    <form action="misegundapagina.html" method="get">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z]+" required minlength="3" maxlength="30">
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" pattern="[a-zA-Z]+" required minlength="3" maxlength="30">
+        <label for="edad">Edad:</label>
+        <input type="text" name="edad" id="edad" placeholder="Edad" ^([1-9]|[1-9][0-9]|[1][0-1][0-9])$required>
+        <label for="email">E-mail:</label>
+        <input type="text" placeholder="E-mail" required>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!-- Versión del html -->
+<html lang="es"> <!-- Esta etiqueta representa la raiz de un documento HTML (el atributo 'lang' el idioma) -->
+
+    <head> <!-- Provee información general (metadatos) acerca del documento -->
+
+        <!-- los metadatos guardan información del documento o de la página -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Etiquetas HTML 5</title> <!-- define el título del documento que se muestra en un browser la barra de título o la pestaña de una página -->
+
+        <link rel="stylesheet" href="./css/style.css"> <!-- esta etiqueta especifica la relación entre el documento actual y un recurso externo. -->
+    </head>
+
+
+    <body> <!-- El elemento <body> de HTML representa el contenido de un documento HTML -->
+
+        <h1 style="text-align: center;">Reto 3 Hackaton 2 - Etiquetas HTML 5</h1>
+
+        
+        <hr> <!--  representa un cambio de tema entre párrafos -->
+        <br> <!-- produce un salto de línea en el texto -->
+        <div></div> <!-- Sirve para crear secciones o agrupar contenidos. -->
+        <span></span> <!--Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.-->
+
+        <header> <!-- representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes -->
+
+            <span>Etiqueta "nav"</span> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. <br><br>
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/python/">Python</a>
+              </nav>
+
+        </header>
+
+
+
+        <main> <!-- representa el contenido principal del <body> de un documento o aplicación -->
+
+            <span>Etiqueta "article"</span> representa una composición auto-contenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente.
+            <article>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+
+            <br><br><hr><br><br>
+            
+            <span>Etiqueta "h1 - h6"</span> Los elementos de encabezado implementan seis niveles de encabezado del documento, "h1" es el más importante, y "h6", el menos importante.
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+            <h3>This is heading 3</h3>
+            <h4>This is heading 4</h4>
+            <h5>This is heading 5</h5>
+            <h6>This is heading 6</h6>
+
+            <br><br><hr><br><br>
+
+            <span>Etiqueta "section"</span> representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro.
+            <section>
+                <h2>WWF History</h2>
+                <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+            </section>
+
+            <br><br><hr><br><br>
+
+            <span>Etiqueta "blockquote"</span> Crea citas en bloque, marca las citas a otros autores o documentos.
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+            </blockquote>
+
+            <br><br><hr><br><br>
+
+            <span>Etiquetas "dt" "dd" "dl"</span> El elemento dl especifica una lista de definiciones. Una entrada en la lista se crea utilizando el elemento dt para el término definido y el elemento dd para la definición del término.
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+
+            <br><br><hr><br><br>
+        
+            <span>Etiquetas "figure" "img" "figcaption"</span> "figcaption" representa un subtítulo o leyenda. "figure" representa contenido independiente, a menudo con un título. "img" representa una imagen en el documento.
+            <figure>
+                <img src="https://as01.epimg.net/epik/imagenes/2020/05/15/portada/1589562082_721975_1589562679_noticia_normal.jpg" alt="AC DC" style="width:500px">
+                <figcaption>
+                    AC/DC es una banda de hard rock británica-australiana, formada en 1973 en Australia.
+                </figcaption>
+            </figure>
+
+            <br><br><hr><br><br>
+
+            <span>Etiquetas "ol" "ul" "li"</span> Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página, todos los cuales irán precedidos, generalmente, por un guión o número.
+            <ol>
+                <li>Coffee</li>
+                <li>Tea
+                    <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                    </ul>
+                </li>
+                <li>Milk</li>
+            </ol>
+
+            <br><br><hr><br><br>
+
+            <span>Etiqueta "p"</span> es el apropiado para distribuir el texto en párrafos.
+            <p>This is some text in a paragraph.</p>
+
+        </main>
+
+
+
+        <aside></aside> <!-- representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento -->
+
+
+
+        <footer> <!-- representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección -->
+
+            <span>Etiqueta "address"</span>  aporta información de contacto para su "article" más cercano o ancestro "body"; en el último caso lo aplica a todo el documento. <br><br>
+            <address>
+                Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+            </address>
+
+        </footer>
+
+    </body>
+
+</html>

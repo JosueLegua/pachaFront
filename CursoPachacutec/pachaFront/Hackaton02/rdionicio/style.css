@@ -1,0 +1,70 @@
+header{
+    background-image: url(imagenes/background.png);
+    width: 960px;
+    height: 525px;
+    left: 0;
+    right: 0;
+}
+
+header h1{
+    position: absolute;
+    width: 232px;
+    height: 74px;
+    left: 386px;
+    top: 53px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+header p{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+
+    position: absolute;
+    width: 365px;
+    height: 117px;
+    left: 78px;
+    top: 262px;
+
+    background: rgba(114, 153, 254, 0.5);
+    border-radius: 10px;
+
+}
+
+.about-me{
+    background-color: #7299FE;
+    width: 960px;
+    height: 200px;
+}
+
+.skills{
+    background-color: #9022FF;
+    width: 960px;
+    height: 525px;
+}
+
+.portafolio{
+    background-color: #FFD233;
+    width: 960px;
+    height: 200px;
+}
+
+.clientes{
+    background-color: #3F4E62;
+    width: 960px;
+    height: 300px;
+}
+
+.contacto{
+    background-color: #1687A0;
+    width: 960px;
+    height: 300px;
+}

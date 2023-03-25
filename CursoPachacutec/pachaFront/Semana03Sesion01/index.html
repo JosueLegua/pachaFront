@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="misegundapagina.html" method="get">
+        <label for="nombre"> Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="apellido"> Apellido: </label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+        
+        <br>
+        <label for="chk">Escoge varias opciones </label>
+        <input type="checkbox" name="chk" id="chk">
+        <input type="checkbox" name="chk2" id="ch">
+
+        <br>
+        <label for="color">Escoge tu color </label>
+        <input type="color" name="color" id="">
+
+        <br>
+        <label for="fecha">Escoge la fecha</label>
+        <input type="date" name="fecha" id="">
+
+        <br>
+        <label for="FechaHora">Escoge la tu hora y fechas</label>
+        <input type="datetime-local" name="fechaHora" id="">
+
+        <br>
+        <label for="email">Escribe tu email</label>
+        <input type="email" name="email" id="">
+
+        <br>
+        <label for="archivo"></label>
+        <input type="file" name="archivo" id="">
+
+        <br>
+        <label for="oculto">Oculto</label>
+        <input type="hidden" name="oculto" value="Estoy Oculto">
+
+        <br>
+        <label for="image">Debe ser una imagen</label>
+        <input type="image" src="chocolo 7.png" alt="">
+
+        <br>
+        <label for="mes"> Escoge el mes</label>
+        <input type="month" name="mes" id="">
+
+        <br>
+        <label for="numeros">Escoge solo numeros</label>
+        <input type="number" name="numeros" id="" max="100" min="10">
+
+        <br>
+        <label for="op1">Opciones</label>
+        <input type="radio" name="opciones" id="" value="CSS"> <label for="opciones">CSS</label>
+        <input type="radio" name="opciones" id="" value="HTML"> <label for="opciones">HTML</label>
+        <input type="radio" name="opciones" id="" value="JS"> <label for="opciones">JS</label>
+
+        <br>
+        <label for="points"> Puntos de (0 a 10)</label>
+        <input type="range" id="points" name="points" min="0" max="10">
+
+        <br>
+        <label for="buscar">Se Busca</label>
+        <input type="search" name="buscar" id="">
+
+        <br>
+        <label for="telefono">Ingresa tu telefono</label>
+        <input type="tel" name="telefono" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <br>
+        <label for="texto">Texto</label>
+        <input type="text" name="texto" id="">
+
+        <br>
+        <label for="tiempo">Tiempo</label>
+        <input type="time" name="tiempo" id="">
+
+        <br>
+        <label for="pagina">Paginas</label>
+        <input type="url" name="pagina" id="">
+
+        <br>
+        <label for="semanas">Semanas</label>
+        <input type="week" name="semanas" id="">
+
+        <br>
+        <label for="textarea">Area grande de texto</label>
+        <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+        <br>
+        <h2>Validaciones</h2>
+
+        <label for="texto">Texto requerido</label>
+        <input type="text" name="texto" id=""  minlength="5" maxlength="10">
+
+        <br>
+        <label for="pattern"> Escribe tu nombre de usuario</label>
+        <input type="text" pattern="^(?=.*\d)(?=.*[az])(?=.*[AZ])(?!.*\s).*$">
+
+        <br>
+        <label for="pattern"> Escribe la escala de tu avion</label>
+        <input type="text" name="nombre" placeholder="Su Escala de avion"
+           required pattern=" [^A-Z][^a-z]1:(24|32|48|72|144) [\:]"
+           title="No es un tipo de escala de avion de aeromodelismo" required minlength="1" maxlength="5">
+
+
+
+        <br>
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+        
+
+     </form>   
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.input-text
+{
+    padding: 10 px 15px;
+    border: 3px solid rgb(179, 178, 178);
+}
+
+.input-text:focus
+{
+    border-color: cyan;
+    outline: transparent;
+    background-color: rgb(206, 206, 206);
+}

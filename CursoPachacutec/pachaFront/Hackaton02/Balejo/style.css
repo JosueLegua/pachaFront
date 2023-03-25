@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+.titulo-1 {
+color: aliceblue;
+position: absolute;
+width: 232px;
+height: 74px;
+left: 386px;
+top: 53px;
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 74px;
+  
+}
+.man {
+  background-image: url("imagen1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 250px 250px;
+}
+.banner {
+  font-family: Arial;
+  font-size: 40px;
+  color: aliceblue;
+}
+.section-2{
+  
+  background-color: #7299FE;
+}
+.titulo-2{
+  font-family: Arial;
+  font-size: 60px;
+  text-align: center;
+  color: #1D06A7;
+  
+}
+.parrafo-1{
+  
+  font-family: Arial;
+  font-size: 14px;
+  color: aliceblue;
+  line-height: 24px;
+}

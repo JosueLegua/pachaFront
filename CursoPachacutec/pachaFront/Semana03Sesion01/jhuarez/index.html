@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario aeromodelismo</title>
+</head>
+<body>
+    <h1>Ejercicio: Formulario escala aeromodelismo</h1>
+    <form action="pagina2.html" method="get">
+		<label for="codigo_avion_escala">Escala de avion seleccionar:</label><br>
+		<small>Escala de avion (1:48, 1:72, 1:100, 1:130, 1:144, 1:150, 1:200, 1:250, 1:300 or 1:400)</small>
+        <br>
+		<input type="text" 
+		id="escala_avion" 
+		name="escala_avion"
+		pattern="(1)(:)(48|72|100|130|144|150|200|250|300|400)" 
+		title="Escala de avion por favor">
+		<br><br>
+		<input type="submit">
+	</form> 	
+    
+</body>
+</html>

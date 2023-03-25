@@ -1,0 +1,213 @@
+* {
+
+font-family: 'Arial';
+font-style: normal;
+
+}
+
+header{
+
+    position: absolute;
+    width: 1665.47px;
+    height: 1078.86px;
+    top: -9.04px;
+    left: 0px;
+    background: url(image.png);
+    background-repeat: no-repeat;
+
+}
+
+h2 {
+
+position: absolute;
+width: 232px;
+height: 74px;
+left: 386px;
+top: 53px;
+
+font-weight: 700;
+font-size: 64px;
+line-height: 74px;
+color: #FFFFFF;
+
+}
+
+.about {
+
+    position: absolute;
+    width: 960px;
+    height: 424px;
+    left: 0px;
+    top: 505px;
+    
+    background: #7299FE;
+
+}
+
+.about h3 {
+
+    position: relative;
+    width: 155px;
+    height: 41px;
+    left: 408px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #1D06A7;
+
+}
+
+.about p {
+
+    padding-left: 40px;
+    width: 872px;
+    left: 41px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #F8F8F8;
+
+}
+
+.about button {
+
+width: 187px;
+height: 62px;
+left: 33px;
+border: none;
+font-size: 22px;
+line-height: 25px;  
+color: #FFFFFF;
+background: #D16FFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+position: relative;
+font-weight: bold;
+
+}
+
+button:hover {
+    background: purple;
+    transition: 0.8s;
+}
+
+.skills {
+    position: absolute;
+    background: #9122FF;
+    width: 960px;
+    height: 424px;
+    left: 0px;
+    top: 927px;
+}
+
+.skills h3 {
+
+    position: relative;
+    color: #26CC4B;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    left: 404px;
+}
+
+table {
+   margin: auto;
+}
+
+td {
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+td progress {
+    margin-top: 10px;
+    padding: 12px;
+    width: 360px;
+}
+
+.portafolio {
+position: absolute;
+width: 960px;
+height: 424px;
+left: 0px;
+top: 1350px;
+background: #FFD233;
+
+}
+
+.portafolio h3 {
+
+font-weight: 700;
+font-size: 36px;
+line-height: 41px;
+color: #00AD84;
+text-align: center;
+
+}
+
+.clientes {
+
+    position: absolute;
+    width: 960px;
+    height: 258px;
+    left: -1px;
+    top: 1770px;
+    background: #3F4E62;
+
+}
+
+.clientes h3 {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #ADFF28;
+    text-align: center;
+}
+
+.contacto {
+
+    position: absolute;
+    width: 960px;
+    height: 578px;
+    left: 0px;
+    top: 2028px;
+    background: #1687A0;
+
+}
+
+.contacto h3 {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #FF1B1B;
+    text-align: center;
+
+}
+
+.formulario {
+
+width: 363px;
+height: 59px;
+left: 100px;
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+margin-bottom: 25px;
+margin-left: 31px;
+position: relative;
+
+}
+
+#enviar {
+
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+background: #233451;
+
+}
